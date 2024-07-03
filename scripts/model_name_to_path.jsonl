@@ -1,0 +1,244 @@
+{"name": "acegpt-7b", "path": "FreedomIntelligence/AceGPT-7B", "gpu": "1", "mem": "100G"}
+{"name": "acegpt-7b-chat", "path": "FreedomIntelligence/AceGPT-7B-chat", "gpu": "1", "mem": "100G"}
+{"name": "acegpt-13b", "path": "FreedomIntelligence/AceGPT-13B", "gpu": "2", "mem": "150G"}
+{"name": "acegpt-13b-chat", "path": "FreedomIntelligence/AceGPT-13B-chat", "gpu": "2", "mem": "200G"}
+{"name": "acegpt-13b-v1.5", "path": "FreedomIntelligence/AceGPT-v1.5-13B", "gpu": "2", "mem": "150G"}
+{"name": "acegpt-13b-v1.5-chat", "path": "FreedomIntelligence/AceGPT-v1.5-13B-Chat", "gpu": "2", "mem": "150G"}
+{"name": "llama-30b_instruct", "path": "upstage/llama-30b-instruct-2048", "gpu": "6", "mem": "350G"}
+{"name": "falcon-40b_instruct", "path": "tiiuae/falcon-40b-instruct", "gpu": "8", "mem": "350G"}
+{"name": "jais-13b", "path": "core42/jais-13b", "gpu": "1", "mem": "100G"}
+{"name": "jais-13b-chat", "path": "core42/jais-13b-chat", "gpu": "1", "mem": "150G"}
+{"name": "jais-30b-v1", "path": "core42/jais-30b-v1", "gpu": "3", "mem": "150G"}
+{"name": "jais-30b-v1-chat", "path": "core42/jais-30b-chat-v1", "gpu": "4", "mem": "450G"}
+{"name": "jais-30b-v3-chat", "path": "core42/jais-30b-chat-v3", "gpu": "2", "mem": "150G"}
+{"name": "jais-30b-v3", "path": "core42/jais-30b-v3", "gpu": "3", "mem": "150G"}
+{"name": "fb_opt_iml_max-30b", "path": "facebook/opt-iml-max-30b", "gpu": "6", "mem": "350G"}
+{"name": "huggy_llama-30b", "path": "huggyllama/llama-30b", "gpu": "6", "mem": "350G"}
+{"name": "mosiac_mpt-30b", "path": "mosaicml/mpt-30b", "gpu": "6", "mem": "350G"}
+{"name": "gpt-6p7b", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/6p7b/gpt-6p7b", "gpu": "1", "mem": "100G"}
+{"name": "gpt-30b", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/gpt-30b", "gpu": "4", "mem": "200G"}
+{"name": "gpt-6p7b_ft_join_v4", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/6p7b/gpt-6p7b/ft_join_v4_inst_data/checkpoint-8500", "gpu": "1", "mem": "100G"}
+{"name": "aya-101-13b-chat", "path": "CohereForAI/aya-101", "gpu": "1", "mem": "150G"}
+{"name": "mixtral-8x7B-v0.1", "path": "mistralai/Mixtral-8x7B-v0.1", "gpu": "4", "mem": "350G"}
+{"name": "mixtral-8x7B-instruct-v0.1", "path": "mistralai/Mixtral-8x7B-Instruct-v0.1", "gpu": "4", "mem": "350G"}
+{"name": "mixtral-8x22B-instruct-v0.1", "path": "mistralai/Mixtral-8x22B-Instruct-v0.1", "gpu": "6", "mem": "550G"}
+{"name": "dbrx-instruct", "path": "/project/NLP_DATA/LM_DATA/models/dbrx/dbrx-instruct", "gpu": "6", "mem": "550G"}
+{"name": "mistral-7B-v0.1", "path": "mistralai/Mistral-7B-v0.1", "gpu": "1", "mem": "100G"}
+{"name": "mistral-7B-Instruct-v0.2", "path": "mistralai/Mistral-7B-Instruct-v0.2", "gpu": "1", "mem": "100G"}
+{"name": "codellama-13b-instruct-hf", "path": "codellama/CodeLlama-13b-Instruct-hf", "gpu": "2", "mem": "150G"}
+{"name": "gemma-2b", "path": "google/gemma-2b", "gpu": "1", "mem": "50G"}
+{"name": "gemma-2b-it", "path": "google/gemma-2b-it", "gpu": "1", "mem": "50G"}
+{"name": "gemma-7b", "path": "google/gemma-7b", "gpu": "1", "mem": "100G"}
+{"name": "gemma-7b-it", "path": "google/gemma-7b-it", "gpu": "1", "mem": "100G"}
+{"name": "lemma-7b", "path": "EleutherAI/llemma_7b", "gpu": "1", "mem": "100G"}
+{"name": "lemma-34b", "path": "EleutherAI/llemma_34b", "gpu": "3", "mem": "100G"}
+{"name": "Yi-34b", "path": "01-ai/Yi-34B", "gpu": "3", "mem": "100G"}
+{"name": "Yi-34b-chat", "path": "01-ai/Yi-34B-Chat", "gpu": "3", "mem": "100G"}
+{"name": "Yi-6b", "path": "01-ai/Yi-6B", "gpu": "1", "mem": "100G"}
+{"name": "Yi-6b-chat", "path": "01-ai/Yi-6B-Chat", "gpu": "1", "mem": "100G"}
+{"name": "falcon2-11b", "path": "tiiuae/falcon-11B", "gpu": "1", "mem": "100G"}
+{"name": "cerebrum-1.0-7b", "path": "AetherResearch/Cerebrum-1.0-7b", "gpu": "1", "mem": "100G"}
+{"name": "m_6p7b", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/6p7b/m_6.7b_pretrain", "gpu": "1", "mem": "100G"}
+{"name": "m_6p7b_mlv2_mix1.0_full-ft_no-trans", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/6p7b/m_6p7b_mlv2_mix1.0_full-ft_no-trans/hf_10643", "gpu": "1", "mem": "100G"}
+{"name": "meta_math-13b-v1.0", "path": "meta-math/MetaMath-13B-V1.0", "gpu": "2", "mem": "100G"}
+{"name": "meta_math_mistral-7b", "path": "meta-math/MetaMath-Mistral-7B", "gpu": "2", "mem": "100G"}
+{"name": "meta_math_llema-7b", "path": "meta-math/MetaMath-Llemma-7B", "gpu": "2", "mem": "100G"}
+{"name": "meta_math-7b-v1.0", "path": "meta-math/MetaMath-7B-V1.0", "gpu": "2", "mem": "100G"}
+{"name": "wizard_math-13b-V1.0", "path": "WizardLM/WizardMath-13B-V1.0", "gpu": "2", "mem": "100G"}
+{"name": "wizard_math-7b-V1.0", "path": "WizardLM/WizardMath-7B-V1.0", "gpu": "2", "mem": "100G"}
+{"name": "ft_6.7b_ft_bs3072_hf_14812", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/6p7b/m_6.7b_ft_bs3072/hf_14812", "gpu": "1", "mem": "50G"}
+{"name": "ft_iiai_2.7b", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/2p7b/iiai_2.7b_ft", "gpu": "1", "mem": "50G"}
+{"name": "m_13b_alibi-swiglu_hf_75000", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/m_13b_alibi-swiglu_hf_75000/hf_75000", "gpu": "1", "mem": "100G"}
+{"name": "m_13b_uae_itc_cp_1052", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/m_13b_uae_itc_cp_1052/hf_1052", "gpu": "1", "mem": "100G"}
+{"name": "m_13b_mlv2_mix1.0_full-ft_v0.5", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/m_13b_mlv2_mix1.0_full-ft_v0.5/hf_6698", "gpu": "1", "mem": "100G"}
+{"name": "ft_v3.5_13b_mlv2_mix1.0_cp8705", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/ft_v3.5_13b_mlv2_mix1.0_cp8705/hf_8705", "gpu": "1", "mem": "100G"}
+{"name": "m_13b_ft_v3.5_hf_2044", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/packed_ft_test/m_ft_v3.5_hf_2044", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v3.5_packed_hf_2039", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/packed_ft_test/m_v3.5_packed_ft/hf_2039", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v3.6", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_13b_ft_v3.6/hf_145", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v3.5_packed_hf_8705", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/packed_ft_test/m_v3.5_packed_ft/hf_2039", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v6.0_packed_hf_1967", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_13b_ft_v3.6/hf_145", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v3.5_summ_v1_hf_600", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/13B_ft_3.5_ft_summarization_v1/hf_600", "gpu": "2", "mem": "100G"}
+{"name": "m_13b_ft_v3.5_summ_v2_hf_645", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/13B_ft_3.5_ft_summarization_v2/hf_645", "gpu": "4", "mem": "100G"}
+{"name": "m_230928_6.7B_ftv6_hf_8305", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/230928_6.7B_ftv6_hf_8305", "gpu": "2", "mem": "100G"}
+{"name": "m_30b_hf_7051_v6_4096", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_hf_7051_v6_4096/hf_7051", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ft_v6_unpacked_hf_6908", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_ft_v6_unpacked/hf_6908", "gpu": "8", "mem": "350G"}
+{"name": "m_30b_ft_v6_packed_hf_5923", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_ft_v6_packed/hf_5923", "gpu": "8", "mem": "350G"}
+{"name": "m_30b_off_ramp_hf_79k", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_pretrained/jais-30b/hf_79000_sharded", "gpu": "4", "mem": "150G"}
+{"name": "m_30b_g42_ft_v6_packed_13b_hps_2310", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_g42_ft_v6_packed_13b_hps/231019_g42_30B_ft_v6_packed_13b_hps/hf_5923", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_g42_ft_v7_packed_hf_7544", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7_2k/hf_7544_sharded", "gpu": "4", "mem": "150G"}
+{"name": "m_30b_g42_ft_v7_packed_hf_7544_8bit", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_ft_v7_packed_hf_7544/hf_7544_8bit", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ftv7_best_hps", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/231028_ftv7_30B_best_hps/hf_7086", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_v8_231025_hf_14160", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_v8_231025/hf_14160/", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_v8_231025_hf_9448", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_v8_231025/hf_9448/checkpoint_9448_to_hf", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ftv7_best_hps_4724", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/231028_ftv7_30B_best_hps/hf_4724", "gpu": "6", "mem": "350G"}
+{"name": "jais_3_5_packed_ft", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/packed_ft_test/m_13b_packed_ft_v3.5/hf_8705", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ftv7.5_best_v7_hps", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/231101_ftv7_5_30B_best_v7_hps", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ft_v7_dpo_ckpt_2k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_30b_v7_dpo/checkpoint-2000", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_ftv7.5_increm_hf_1080", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/231104_30B_incremental_ft_v7p5/hf_1080", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_pt_long_cont_hf_89k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30B_long_train_ph2/hf_89473", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_pt_long_cont_hf_99k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30B_long_train_ph2/hf_99473", "gpu": "6", "mem": "350G"}
+{"name": "m_30b_pt_long_cont_hf_120k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30B_long_train_ph2/hf_120073", "gpu": "6", "mem": "350G"}
+{"name": "m_13b_ft_v7_mix_1_1_lr_1.2e-3", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/13b_v7_data/mix_1_1_lr_1.2e-3/hf_1349", "gpu": "3", "mem": "350G"}
+{"name": "m_13b_ft_v7_mix_1_1_lr_1.6e-3", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/13b_v7_data/mix_1_1_lr_1.6e-3/hf_1349", "gpu": "3", "mem": "350G"}
+{"name": "m_13b_ft_v7_mix_1_1_lr_6.7e-4", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/13b_v7_data/mix_1_1_lr_6.7e-4/hf_1349", "gpu": "3", "mem": "350G"}
+{"name": "m_13b_ft_v3.6_8_bit", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/m_13b_ft_v3.6/8_bit_hf", "gpu": "3", "mem": "150G"}
+{"name": "m_13b_dpo_ultrachat_beta0.1", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-ultrachat/sigmoid/beta_0_1/checkpoint-1200", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_dpo_ultrachat_beta0.2", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-ultrachat/sigmoid/beta_0_2/checkpoint-1200", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_dpo_ultrachat_beta0.3", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-ultrachat/sigmoid/beta_0_3/checkpoint-1200", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_dpo_ultrachat_beta0.4", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-ultrachat/sigmoid/beta_0_4/checkpoint-1200", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_dpo_ultrachat_beta0.5", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-ultrachat/sigmoid/beta_0_5/checkpoint-1200", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_dpo_rejection_sampled", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/jais-13b-chat-rs/sigmoid/beta_0_5/checkpoint-2000", "gpu": "1", "mem": "150G"}
+{"name": "m_13B_3.5_sft_helpful_rejectionv1_1epoch", "lambda_a100_path": "/nfs/nlp_data/checkpoints/m_13B_3.5_helpful_rejectionv1_1epoch/hf_233", "gpu": "1", "mem": "150G"}
+{"name": "m_13b_ft7p3_2k_cpt_8196", "big_h100_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/13b_ft7p3_2k/hf_8196/checkpoint_8196_to_hf", "gpu": "1", "mem": "100G"}
+{"name": "llam2_13b_dpo_ultrachat_beta0.5", "lambda_a100_path": "/nfs/nlp_data/checkpoints/dpo_models/llam2-13b-chat-ultrachat/sigmoid/beta_0_5_lr_1e5/checkpoint-2000", "gpu": "1", "mem": "150G"}
+{"name": "llam2_13b_chat", "lambda_a100_path": "/nfs/nlp_data/checkpoints/llama2-13b-chat", "gpu": "1", "mem": "150G"}
+{"name": "m_30b_ph2_no_warmup_ckpt_99k", "lambda_a100_path": "/nfs/nlp_data/checkpoints/30b_ph2_no_warmup/hf_99273/checkpoint_99273_to_hf", "gpu": "2", "mem": "250G"}
+{"name": "m_30b_ph2_no_warmup_ckpt_109k", "lambda_a100_path": "/nfs/nlp_data/checkpoints/30b_ph2_no_warmup/hf_109273/checkpoint_109273_to_hf", "gpu": "2", "mem": "250G"}
+{"name": "m_30b_ph2_no_warmup_ckpt_119k", "lambda_a100_path": "/nfs/nlp_data/checkpoints/30b_ph2_no_warmup/hf_119273/checkpoint_119273_to_hf", "gpu": "2", "mem": "250G"}
+{"name": "m_30b_ph2_no_warmup_ckpt_129k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_no_warmup/hf_129273/checkpoint_129273_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_no_warmup_long_8k_ckpt_139k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_no_warmup_long_8k/hf_139273/checkpoint_139273_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_no_warmup_long_8k_ckpt_147k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_no_warmup_long_8k/hf_147273/checkpoint_147273_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_no_warmup_long_8k_ckpt_157k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_no_warmup_long_8k/hf_157273/checkpoint_157273_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_no_warmup_long_8k_ckpt_167k", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_no_warmup_long_8k/hf_167273/checkpoint_167273_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_ft_7p1_cont_len_2k_hf_7449", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_ft/30b_ph2_ft_7p1_2k/hf_7449/checkpoint_7449_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_7p1_8k/hf_7565/checkpoint_7565_to_hf", "gpu": "3", "mem": "150G"}
+{"name": "30b_ph2_ft_9p5_cont_len_2k_hf_7460", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_ft/30b_ph2_ft_9p5_2k/hf_7460/checkpoint_7460_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_ft_v9p5_2k_incr_8k_hf_9986", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_ft/30b_ph2_ft_v9p5_2k_incr_8k/hf_9986/checkpoint_9986_to_hf", "gpu": "16", "mem": "450G"}
+{"name": "30b_ph2_ft_v7p1_2k_incr_8k_hf_9970", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph2_ft/30b_ph2_ft_v7p1_2k_incr_8k/hf_9970/checkpoint_9970_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph1_ft_v7p1_2k_incr_8k_hf_9932", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/30b_ph1_ft/30b_ph1_ft_v7p1_2k_incr_8k/hf_9932/checkpoint_9932_to_hf", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565_school_hackp", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_7p1_8k/hf_7565/checkpoint_7565_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565_fp16", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/jais-30b-8k-chat-4bit-accelerate-v7p1", "gpu": "16", "mem": "450G"}
+{"name": "jais-13b-chat-fp16", "v100_path": "/nfs/users/ext_sunil.kumar/nlp_data/LM_DATA/models/final_models_evaluated/jais-13b-2k-chat-4bit-accelerate", "gpu": "6", "mem": "250G"}
+{"name": "30b_ph1_ft_v7p1_8k_hf_2690", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7p1_8k/hf_2690/checkpoint_2690_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph1_ft_v7p1_8k_hf_8070", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7p1_8k/hf_8070/checkpoint_8070_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph1_ft_v7p1_8k_hf_8070_school_hackp", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7p1_8k/hf_8070/checkpoint_8070_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_v7p1_2k_hf_7449", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_finetuned/jais-30b-ph2-chat-7p1-2k/hf_7449/checkpoint_7449_to_hf/", "gpu": "4", "mem": "150G"}
+{"name": "dpo_30b_ph2_ft_v7p1_2k_hf_7449_cpt_300", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/jais-30b-ph2-chat-7p1-2k-sigmoid1/checkpoint-300", "gpu": "4", "mem": "150G"}
+{"name": "dpo_30b_ph2_ft_v7p1_2k_hf_7449_cpt_1k", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/jais-30b-ph2-chat-7p1-2k-sigmoid1/checkpoint-1000", "gpu": "4", "mem": "150G"}
+{"name": "dpo_only_rs_data_30b_ph2_ft_v7p1_2k_hf_7449_cpt_100", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/second_training/jais-30b-ph2-chat-7p1-2k/checkpoint-100/", "gpu": "4", "mem": "150G"}
+{"name": "dpo_only_rs_data_30b_ph2_ft_v7p1_2k_hf_7449_cpt_300", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/second_training/jais-30b-ph2-chat-7p1-2k/checkpoint-300", "gpu": "0", "mem": "150G"}
+{"name": "dpo_only_rs_data_30b_ph2_ft_v7p1_2k_hf_7449_cpt_600", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/second_training/jais-30b-ph2-chat-7p1-2k/checkpoint-600", "gpu": "0", "mem": "150G"}
+{"name": "dpo_rs_best_random_data_30b_ph2_ft_v7p1_2k_hf_7449_cpt_500", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/third_training/jais-30b-ph2-chat-7p1-2k-beta0p2/checkpoint-500", "gpu": "4", "mem": "150G"}
+{"name": "dpo_rs_best_random_data_30b_ph3_ft_7p1_8k_hf_5044_cpt_500", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/jais-30b-ph3/jais-30b-ph2-chat-7p1-2k-beta0p2/checkpoint-500", "gpu": "4", "mem": "150G"}
+{"name": "dpo_rs_best_random_data_30b_ph3_ft_7p1_8k_hf_7565_cpt_500", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/jais-30b-ph3/jais-30b-ph3-chat-7p1-cp7565-2k-beta0p2/checkpoint-500", "gpu": "4", "mem": "150G"}
+{"name": "rs_sft_30b_v7p1_2k_clen_3R_nectar_jaisdb_hf_151", "taiga_path": "/nfs_shared/ss1/checkpoints/rejection_sampled_sft_models/30b_v7p1_2k_clen_3R_nectar_jaisdb_hf_151", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph1_ft_v7p1_2k_hf_7449", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7p1_2k/30B_v71_sharded", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565_shpreai", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_7p1_8k/hf_7565/checkpoint_7565_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "m_30b_g42_ft_v7_packed_hf_7544_preai", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_ft_v7_2k/hf_7544_sharded", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565_shpreai_0.5", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_7p1_8k/hf_7565/checkpoint_7565_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p1_cont_len_8k_hf_7565_preai_0.5", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_7p1_8k/hf_7565/checkpoint_7565_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_no_warmup_long_8k_ckpt_167429", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_no_warmup_8k/hf_167429", "gpu": "3", "mem": "150G"}
+{"name": "30b_ph3_pt_hf_260648", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_pt/hf_260648", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph3_pt_hf_247429", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_pt/hf_247429", "gpu": "3", "mem": "150G"}
+{"name": "30b_ph3_pt_long_cont_16k_hf_283648", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/240403_30B_ph3_16K_pt/checkpoint_283648_to_hf","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/30b_ph3_long_cont_16k/checkpoint_283648_to_hf", "gpu": "8", "mem": "650G"}
+{"name": "30b_ph3_ft_7p1_8k_hf_7565", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p1_8k/hf_7565", "gpu": "3", "mem": "150G"}
+{"name": "30b_ph3_ft_7p1_8k_hf_7565_preai_0.5", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p1_8k/hf_7565", "gpu": "0", "mem": "150G"}
+{"name": "30b_ph3_ft_7p1_8k_hf_2522", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p1_8k/hf_2522", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph3_ft_7p1_8k_hf_5044", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p1_8k/hf_5044", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph1_dialectalv1_hf_5014", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph1_dialectalv1/checkpoint_5014_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p2_8k_hf_7482", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_v7p2_8k/hf_7482/checkpoint_7482_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_7p2_8k_hf_7482_school_hackp", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph2_ft_v7p2_8k/hf_7482/checkpoint_7482_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph2_ft_v7p1_2k_hf_7449_school_hackp", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_finetuned/jais-30b-ph2-chat-7p1-2k/hf_7449/checkpoint_7449_to_hf/", "gpu": "4", "mem": "150G"}
+{"name": "dpo_30b_ph2_ft_7p2_8k_hf_7482_cpt_500", "taiga_path": "/nfs_shared/ss1/checkpoints/dpo_models/jais-30b-ph3/jais-30b-ph3-chat-7p2-cp7565-2k-beta0p2/checkpoint-500/", "gpu": "4", "mem": "150G"}
+{"name": "llama_subword_mean_extend_100p_lr_1.5e-4", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/llama2_extend_100p_tokenizer_lr_1.5e-4_subword_mean_init_v2_r2.15e-4_subword_mean_init_v2_r2.1/hf_10060", "gpu": "1", "mem": "50G"}
+{"name": "llama_extend_100p_lr1.5e-4_mix_1-1_en-ar", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/lr_mix_ablation/extend_100p_fixed/model_dir_lr1.5e-4_mix_1-1_en-ar/hf_7120", "gpu": "1", "mem": "50G"}
+{"name": "llama_extend_100p_lr1.5e-4_mix_1-3_en-ar", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/lr_mix_ablation/extend_100p_fixed/model_dir_lr1.5e-4_mix_1-3_en-ar/hf_4747", "gpu": "1", "mem": "50G"}
+{"name": "llama_extend_100p_lr1.5e-4_mix_1-9_en-ar", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/lr_mix_ablation/extend_100p_fixed/model_dir_lr1.5e-4_mix_1-9_en-ar/hf_3955", "gpu": "1", "mem": "50G"}
+{"name": "llama_extend_100p_lr3e-4_mix_1-1_en-ar", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/lr_mix_ablation/extend_100p_fixed/model_dir_lr3e-4_mix_1-1_en-ar/hf_7120", "gpu": "1", "mem": "50G"}
+{"name": "llama2_base_tokenizer_lr_1p5e-4", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama_ablations_cbs/llama2_base_tokenizer_lr_1p5e-4/hf_22259", "gpu": "1", "mem": "150G"}
+{"name": "llama2_7b_lora_data_combined_cpt_64k", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_pretrained/arabic-llama/llama2-data_combine1-lora/checkpoint-64000", "gpu": "4", "mem": "150G"}
+{"name": "llama2_7b_fp_data_combined_cpt_52k", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_pretrained/arabic-llama/llama2-data_combine1-fp/checkpoint-52500", "gpu": "2", "mem": "150G"}
+{"name": "llama2_13b_lora_data_combined_cpt_30k", "taiga_path": "/nfs_shared/ss1/checkpoints/checkpoint-30000", "gpu": "4", "mem": "150G"}
+{"name": "llama2-7b", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_pretrained/llama2-7b", "big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama/llama2-7b", "gpu": "1", "mem": "50G"}
+{"name": "llama2-13b", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_pretrained/llama2-13b", "big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama2/13B_llama2_base", "gpu": "1", "mem": "150G"}
+{"name": "30b_ph3_ft_7p2_8k_hf_2420", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p2_8k/hf_2420", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph3_ft_7p2_8k_hf_4840", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p2_8k/hf_4840", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph3_ft_7p2_8k_hf_7257", "path": "core42/jais-30b-chat-v3", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p2_8k/hf_7257", "gpu": "3", "mem": "150G"}
+{"name": "30b_ph3_ft_7p4_math_hf_10111", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p4_math/hf_10111", "gpu": "3", "mem": "250G"}
+{"name": "llama_7b_lr1.5e-4_mix_1-1_ft_v7p2_4k_hf_8405", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/model_dir_7B_1-1_mix_lr_1.5e-4_tokenizer_ablation_ckpt_ift_v7p2_4k/hf_8405", "gpu": "1", "mem": "50G"}
+{"name": "llama_7b_lr_3e-4_shorter_schedule_mix_1-1_ft_v7p2_4k_hf_8405", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/model_dir_7B_1-1_mix_lr_3e-4_shorter_schedule_lr-mix-ckpt_ift_v7p2_4k/hf_8405", "gpu": "1", "mem": "50G"}
+{"name": "llama2-13b-adapted", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/llama2_13B_adaptation_long_run/hf_70938", "gpu": "1", "mem": "150G"}
+{"name": "llama2-7b-chat", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_finetuned/llama2-7b-chat-hf", "gpu": "1", "mem": "150G"}
+{"name": "llama_7b_lr1.5e-4_mix_1-1_ft_v7p2_4k_hf_8405", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/model_dir_7B_1-1_mix_lr_1.5e-4_tokenizer_ablation_ckpt_ift_v7p2_4k/hf_8405", "gpu": "0", "mem": "50G"}
+{"name": "llama_7b_lr_3e-4_shorter_schedule_mix_1-1_ft_v7p2_4k_hf_8405", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/model_dir_7B_1-1_mix_lr_3e-4_shorter_schedule_lr-mix-ckpt_ift_v7p2_4k/hf_8405", "gpu": "0", "mem": "50G"}
+{"name": "llama2-13b-adapted_v7p2_4k_hf_8405", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/13B_llama2_arabic_ift_v7p2_4k/hf_8405", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b-chat", "taiga_path": "/nfs_shared/ss1/checkpoints/llm_finetuned/llama2-13b-chat", "gpu": "2", "mem": "150G"}
+{"name": "llama2-70b-pt_hf_28500", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/PT/70B_llama2_arabic_pt/hf_28500", "gpu": "5", "mem": "350G"}
+{"name": "llama2-70b-pt_hf_39500", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/PT/70B_llama2_arabic_pt/hf_39500", "gpu": "5", "mem": "350G"}
+{"name": "llama2-70b-pt_offramp_hf_59205", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/PT/70B_llama2_arabic_pt/offramped/hf_59205", "gpu": "5", "mem": "350G"}
+{"name": "llama2-70b-ft_v7p4_math_hf_10227", "big_h100_path": "/project/NLP_DATA/LM_DATA/models/llama2/SFT/70B_llama2_arabic_ift_v7p4_math/hf_10227", "gpu": "5", "mem": "350G"}
+{"name": "llama2-70b-hf", "taiga_path": "meta-llama/Llama-2-70b-hf", "big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama/llama2-70b", "gpu": "5", "mem": "350G"}
+{"name": "llama2-70b-chat-hf", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2-70b-chat","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama2-70b-chat", "gpu": "5", "mem": "350G"}
+{"name": "llama2-13b-adapted_v7p2_4k_hf_8405_maths_cot_unshuffle_hf_1539", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_arabic_ift_v7p2_4k_maths_cot_unshuffle/hf_1539", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b-adapted_v7p2_4k_hf_8405_maths_cot_shuffle_hf_1539", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_arabic_ift_v7p2_4k_maths_cot_shuffle/hf_1539", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b-adapted_v7p2_4k_hf_8405_maths_cpot_hf_1839", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_arabic_ift_v7p2_4k_maths_cpot/hf_1839", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b-ar_base_4k_maths_cpot_hf_1839", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_ar_base_4k_maths_cpot/hf_1839", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b_base_4k_maths_cpot_hf_1839", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_base_4k_maths_cpot/hf_1839", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b_ar_base_4k_maths_cpot_openmath_orca_hf_7548", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/13B_llama2_ar_base_4k_maths_cpot_openmath_orca/hf_7548", "gpu": "2", "mem": "150G"}
+{"name": "llama2-13b-chat_maths_iq_reasoning_data_hf_1070", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_13b-adapted_maths/llama2-13b-chat_maths_iq_reasoning_data/hf_1070/checkpoint_1070_to_hf", "gpu": "2", "mem": "150G"}
+{"name": "llama2-70b-chat_maths_iq_reasoning_data_hf_1070", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2-70b-chat_maths_iq_reasoning_data/hf_1070/checkpoint_1070_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "llemma-34b_ft_maths_iq_reasoning_data_hf_1091", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/maths_models/llemma-34b_ft_maths_iq_reasoning_data/hf_1091/checkpoint_1091_to_hf", "gpu": "4", "mem": "150G"}
+{"name": "mistral-7b-instruct_maths_cpot_openmath_orca", "taiga_path": "/nfs_shared/model_checkpoints/math-llm/mistral-7b-instruct", "gpu": "2", "mem": "150G"}
+{"name": "30b_ph3_ft_v7p2_8k_dpo_sigmoid_beta0p2_hf_1500", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/30b/30b_ph3_ft_v7p2_8k_dpo_sigmoid_beta0p2/checkpoint-1500", "gpu": "2", "mem": "150G"}
+{"name": "13B_ftv7p6_2k_hf_12213", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/13b/240703_13B_ftv7p6_2k/hf_12213", "gpu": "1", "mem": "150G"}
+{"name": "llama2_70B_arabic_offramped_ift_math_iq_4k", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/240313_70B_llama2_arabic_offramped_ift_v7p4_math_iq_4k/hf_1089", "gpu": "5", "mem": "150G"}
+{"name": "llama2_70b_base_ift_v10_math_iq_hf_2506", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_base_3epochs_ift_v10_math_iq/hf_2506", "gpu": "5", "mem": "150G"}
+{"name": "llama2_70b_base_ift_v10_math_iq_hf_7517", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_base_3epochs_ift_v10_math_iq/hf_7517", "gpu": "5", "mem": "150G"}
+{"name": "llama2_70b_chat_ift_v10_math_iq_hf_7289", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_chat_3epochs_ift_v10_math_iq/hf_7289", "gpu": "5", "mem": "150G"}
+{"name": "jamba", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/llama2_70b_v2_ift_v11/hf_11992/", "gpu": "5", "mem": "350G"}
+{"name": "llemma_34b_ift_v10_math_iq_hf_7517", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/math_models/llemma_34b_ift_v10_math_iq/hf_7517", "gpu": "3", "mem": "150G"}
+{"name": "llama2_70b_chat_ift_v10p1_math_iq_hf_8346", "taiga_path": "/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_chat_math_ift_v10p1/hf_8346","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama2_70b_chat_v10p1/hf_8346", "gpu": "5", "mem": "150G"}
+{"name": "llama2_70b_chat_ift_v10_math_iq_hf_4860","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama2_70b_chat_v10/hf_4860", "gpu": "5", "mem": "350G"}
+{"name": "13B_ft_7p6_2k_hf_8598","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/13b/13B_ft7p6_2k/hf_8598", "gpu": "2", "mem": "150G"}
+{"name": "30B_ph3_ift_v7p6_hf_8432","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/30b/30B_ph3_ift_v7p6/hf_8432", "gpu": "4", "mem": "150G"}
+{"name": "llama3-70b-base","path":"meta-llama/Meta-Llama-3-70B", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-chat","path":"meta-llama/Meta-Llama-3-70B-Instruct", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-base","path":"/vast/core42-nlp/shared/model_checkpoints/Meta-Llama-3-70B", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-chat","big_h100_path":"/vast/core42-nlp/shared/model_checkpoints/Meta-Llama-3-70B-Instruct", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-ft_v10p2_hf_7845","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama3_70b_FT_v10p2/checkpoint_7845_to_hf", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-ft_v10p1_hf_7323","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama3_70b_FT_v10p1/hf_7323", "gpu": "5", "mem": "350G"}
+{"name": "13b_ph1_ft_7p1_2k_hf_7449", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/13b/13b_ph1_ft_7p1_2k/hf_7449", "gpu": "1", "mem": "150G"}
+{"name": "llama2_70b_QCC_PP_ft_v10p1_hf_9180","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_base_QCC_PP_ft_v10p1/checkpoint_9180_to_hf", "gpu": "5", "mem": "350G"}
+{"name": "falcon_ft_v10p1_hf_4305","big_h100_path":"/project/NLP_DATA/LM_DATA/models/falcon/falcon_ft_v10p1/checkpoint_4305_to_hf", "gpu": "8", "mem": "650G"}
+{"name": "falcon_ft_v10p2_hf_8072","big_h100_path":"/project/NLP_DATA/LM_DATA/models/falcon/falcon_ift_v10p2/checkpoint_8072_to_hf", "gpu": "8", "mem": "650G"}
+{"name": "falcon_180_instruct","big_h100_path":"/project/NLP_DATA/LM_DATA/models/falcon/falcon_instruct", "gpu": "8", "mem": "650G"}
+{"name": "Jamba-v0.1","big_h100_path":"/project/NLP_DATA/LM_DATA/models/ai21labs/Jamba-v0.1", "gpu": "5", "mem": "350G"}
+{"name": "falcon_180_base","big_h100_path":"/project/NLP_DATA/LM_DATA/models/falcon/falcon-180b", "gpu": "8", "mem": "650G"}
+{"name": "m_1.3b_ft_v11_hf_9524","big_h100_path":"/project/NLP_DATA/LM_DATA/models/1p3b/m_1.3b_ft_v11/hf_9524", "gpu": "1", "mem": "100G"}
+{"name": "m_1p3b_mlv2_mix1.0_full_ft_no-trans","big_h100_path":"/project/NLP_DATA/LM_DATA/models/1p3b/m_1p3b_mlv2_mix1.0_full_ft_no-trans/hf_15965", "gpu": "1", "mem": "100G"}
+{"name": "m_1.3b_ft_v3_bs2304","big_h100_path":"/project/NLP_DATA/LM_DATA/models/1p3b/m_1.3b_ft_v3/bs2304/hf", "gpu": "1", "mem": "100G"}
+{"name": "llama2-70b-pt_hf_94316","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama2/70B_llama2_arabic_pt/checkpoint_94316_to_hf", "gpu": "5", "mem": "350G"}
+{"name": "llama3-70b-ft_v10p2_hf_3681","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama3_70b_FT_v10p2/corrected_vsl/ckpt_3681_to_hf", "gpu": "8", "mem": "350G"}
+{"name": "llama2-70b_ft_v12_hf_13910","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama2_70b_ar_ift_v12/hf_13910", "taiga_path":"/nfs_shared/NLP_DATA/LM_DATA/models/llama2/SFT/llama2_70b_ar_ift_v12/hf_13910", "gpu": "5", "mem": "350G"}
+{"name": "m-jais-590m-pt-209422", "taiga_path": "/project/NLP_DATA/LM_DATA/models/590m/hf_209422","gpu": "1", "mem": "40G"}
+{"name": "llama2_70b_v2_ift_v11_hf_11992", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/llama2_70b_v2_ift_v11/hf_11992/", "gpu": "5", "mem": "350G"}
+{"name": "30B_3epochs_ift_v12p2_8k_hf_6366", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/Jais30B_3epochs_ift_v12p2_8k/hf_6366", "gpu": "4", "mem": "150G"}
+{"name": "1p3b_v12p2_gbs256_hf_24690","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/jais_1p3b_v12p2_gbs256/hf_24690", "gpu": "1", "mem": "50G"}
+{"name": "2p7b_v12p2_gbs256_hf_24690","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/jais_2p7b_v12p2_gbs256/hf_24690", "gpu": "1", "mem": "40G"}
+{"name": "30B_3epochs_ift_v12p2_8k_hf_12729", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/Jais30B_3epochs_ift_v12p2_8k/hf_12729", "gpu": "4", "mem": "150G"}
+{"name": "30b_ph3_ft_v7p1_8k_hf_7565", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/30b/30b_ph3_ft_v7p1_8k_hf_7565/hf_7565/", "gpu": "4", "mem": "150G"}
+{"name": "llama2_70b_ar_ift_v12p2_hf_13175","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/30b/llama2_70b_ar_ift_v12p2_hf_13175/hf_13175", "gpu": "5", "mem": "350G"}
+{"name": "llama2_13B_ift_v12p2_4k_hf_13175","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama/llama2_13B_ift_v12p2_4k_hf_13175/hf_13175", "gpu": "2", "mem": "150G"}
+{"name": "llama2_7B_ift_v12p2_4k_hf_13175","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama/llama2_7B_ift_v12p2_4k_hf_13175/hf_13175", "gpu": "1", "mem": "100G"}
+{"name": "6p7b_v12p2_gbs512_hf_12540", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/6p7b/hf_12540", "gpu": "1", "mem": "50G"}
+{"name": "590m_Arav5_hf_209422", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/590m/590m_v3_hf_209422/hf_209422/", "gpu": "1", "mem": "50G"}
+{"name": "1p3B_Arav5_hf_187942", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/1p3/1p3B_v3_hf_187942/hf_187942", "gpu": "1", "mem": "50G"}
+{"name": "6p7B_Arav5_hf_143721", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/6p7/6p7B_v3_hf_143721/hf_143721", "gpu": "1", "mem": "50G"}
+{"name": "13B_Arav5_hf_122162", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/13b/13B_v3_hf_122162/hf_122162", "gpu": "1", "mem": "50G"}
+{"name": "30B_16K_lr_10x_decay_double_upsampling_PT_hf_28703", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/30B_16K_lr_10x_decay_double_upsampling_PT_hf_28703/hf_287032", "gpu": "2", "mem": "150G"}
+{"name": "jais_590M_v12p2_gbs256_hf_24690", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/ft/jais_590M_v12p2_gbs256_hf_24690/hf_24690", "gpu": "1", "mem": "40G"}
+{"name": "llama2_7b_ex100p_subwordmean_hf_10060", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/llama/llama2_7b_ex100p_subwordmean_hf_10060/hf_10060", "gpu": "1", "mem": "80G"}
+{"name": "Jais30B_ph3_PT_237429", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/pt/30b/Jais30B_ph3_PT_237429/Jais30B_phase3_PT_ckpt_237429/hf_237429_to_cs-2.1", "gpu": "4", "mem": "150G"}
+{"name": "2p7B_v3_hf_162883","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/jais/pt/2p7b/2p7B_v3_hf_162883/hf_162883", "gpu": "1", "mem": "40G"}
+{"name": "13b_v12p2_gbs512_hf_12345", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/ft/13b/13b_v12p2_gbs512_hf_12345/hf_12345", "gpu": "1", "mem": "150G"}
+{"name": "30B_3epochs_ift_v12p2_16k_hf_11342", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/ft/30b/30B_3epochs_ift_v12p2_16k_hf_11342/hf_11342", "gpu": "2", "mem": "150G"}
+{"name": "30B_3epochs_ift_v12p2_8k_260648_step_hf_12729", "big_h100_path": "/vast/core42-nlp/shared/onkar.pandit/jais/ft/30b/30B_3epochs_ift_v12p2_8k_260648_step_hf_12729/hf_12729", "gpu": "2", "mem": "150G"}
+{"name": "Llama2_70b_chat_hf","path":"meta-llama/Llama-2-70b-chat-hf", "gpu": "6", "mem": "350G"}
+{"name": "Llama2_13b_chat_hf","path":"meta-llama/Llama-2-13b-chat-hf", "gpu": "2", "mem": "150G"}
+{"name": "Llama2_7b_chat_hf","path":"meta-llama/Llama-2-7b-chat-hf", "gpu": "1", "mem": "100G"}
+{"name": "llama3_8b_ft_v12p2_hf_13524","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama/llama3_8b_ft_v12p2_hf_13524/hf_13524", "gpu": "1", "mem": "100G"}
+{"name": "llama3_8b_instruct","path":"meta-llama/Meta-Llama-3-8B-Instruct", "gpu": "1", "mem": "100G"}
+{"name": "llama3_8b_base","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llama3_8b_base", "gpu": "1", "mem": "100G"}
+{"name": "llama2_13b_hi_adapted_base","big_h100_path":"/project/NLP_DATA/LM_DATA/models/llama2/13B_llama2_hindi_pt/hf_18252", "gpu": "1", "mem": "100G"}
+{"name": "llama3_8b_ar_adapted_v12p2_3epochs","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/Llama3-8b-ar_adapted_v12p2_3epochs/checkpoint_11689_to_hf", "gpu": "1", "mem": "100G"}
+{"name": "llama3_pro_10b_ift_v12p2","big_h100_path":"/vast/core42-nlp/shared/onkar.pandit/llamapro10b_ift_v12p2/checkpoint_11689_to_hf", "gpu": "1", "mem": "100G"}
