@@ -16,7 +16,15 @@ _DESCRIPTION = """\
 Measuring Massive Multitask Language Understanding by Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt (ICLR 2021).
 """
 
-LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,hm,hn,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+
+# Added """hm""" for Meta Llama-3.1 mmlu hindi evaluation set.
+# Source: "https://huggingface.co/datasets/meta-llama/Meta-Llama-3.1-8B-Instruct-evals/viewer/Meta-Llama-3.1-8B-Instruct-evals__multilingual_mmlu_hi__details"
+# Paper: "https://scontent.ffjr1-6.fna.fbcdn.net/v/t39.2365-6/452387774_1036916434819166_4173978747091533306_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DTS7hDTcxZoQ7kNvgGKLgOY&_nc_ht=scontent.ffjr1-6.fna&oh=00_AYAVW94oy05nlimqg6bU2Uv0gWib6izVJ_BVIMkb6k6kkw&oe=66AE9C4D"
+# MMLU Paper: "https://arxiv.org/pdf/2009.03300"
+
+# Added:
+#    "hn: IndicEval-mmlu-hi"
 
 
 class MMLUConfig(datasets.BuilderConfig):

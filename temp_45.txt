@@ -1,0 +1,29 @@
+meta-llama/Meta-Llama-3-8B
+meta-llama/Meta-Llama-3.1-8B
+meta-llama/Meta-Llama-3.1-8B-Instruct
+
+Conda Environments
+Test -> llama3
+llama3.1 -> llama3.1
+
+IndicEval
+m         meta hindi mmlu google translated
+n,o,p,q   mmlu,hellaswag,arc-easy,arc-challenge
+
+English tasks -- "https://github.com/onkarpanditG42/lm-eval-harness/blob/main/scripts/tasks.py"
+MMLU - mmlu-*
+Hellaswag - hellaswag
+ARC - arc_challenge
+Truthfulqa - truthfulqa_mc
+
+python main.py --model hf-causal-experimental --model_args use_accelerate=True,pretrained=sarvamai/sarvam-2b-v0.5 --tasks mmlu_hi --num_fewshot 0 --output_path  output/output1.json --device cuda
+
+python IndicBench-CrossSum.py --model_name "../Models/llama3Pro/llama3pro_10B_hi_cosmo_base/checkpoint_27466_to_hf/"; python IndicBench-CrossSum.py --model_name "../Models/llama3Pro/llama3pro_10B_hi_cosmo_ift_Datav1/checkpoint_133_to_hf/"; python IndicBench-CrossSum.py --model_name "../Models/llama3pro_10B_hi_cosmo_ift_Datav2/checkpoint_2060_to_hf/"
+
+python IndicBench-CrossSum.py --model_name "meta-llama/Meta-Llama-3-8B"; python IndicBench-CrossSum.py --model_name "meta-llama/Meta-Llama-3.1-8B"; python IndicBench-CrossSum.py --model_name "meta-llama/Meta-Llama-3.1-8B-Instruct"
+
+python main.py --model hf-causal-experimental --model_args use_accelerate=True,pretrained=meta-llama/Meta-Llama-3.1-8B --tasks truthfulqa_mc --num_fewshot 0 --output_path  output/output1.json --device cuda
+
+
+
+

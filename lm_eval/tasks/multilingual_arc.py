@@ -27,7 +27,9 @@ _CITATION = """
 }
 """
 
-LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,hp,hq,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+# Added:
+#    "hp: IndicEval-ARC-Easy-hi", "hq: IndicEval-ARC-Challenge-hi"
 
 
 def create_all_tasks():

@@ -1,0 +1,25 @@
+{
+  "results": {
+    "truthfulqa_hi": {
+      "mc1": 0.25614489003880986,
+      "num_samples": 773,
+      "mc1_stderr": 0.01571007916070163,
+      "mc2": 0.44524473776186324,
+      "mc2_stderr": 0.015596478560910504
+    }
+  },
+  "versions": {
+    "truthfulqa_hi": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=sarvamai/sarvam-2b-v0.5",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

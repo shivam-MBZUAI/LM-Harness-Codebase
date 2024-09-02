@@ -6,7 +6,7 @@ from . import dummy
 
 # IIAI Models
 from . import cerebras, iiai_cerebras
-from . import vllm
+# from . import vllm
 
 MODEL_REGISTRY = {
     "hf": gpt2.HFLM,
@@ -20,7 +20,7 @@ MODEL_REGISTRY = {
     # IIAI models
     "cerebras": cerebras.HFLM,
     "iiai-cerebras": iiai_cerebras.HFLM,
-    "vllm": vllm.VLLM
+    # "vllm": vllm.VLLM
 }
 
 

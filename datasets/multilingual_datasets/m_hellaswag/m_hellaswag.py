@@ -30,7 +30,10 @@ class HellaswagConfig(datasets.BuilderConfig):
         self.name = f'hellaswag_{lang}'
         self.url = f"datasets/m_hellaswag/{lang}_validation.json"
 
-LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+LANGS = 'ar,bn,ca,da,de,es,eu,fr,gu,hi,ho,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh'.split(',')
+
+# Added:
+#    "ho: IndicEval-hellaswag-hi"
 
 
 
