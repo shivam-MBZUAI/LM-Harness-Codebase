@@ -1,25 +1,3 @@
-{
-  "results": {
-    "mmlu_hi": {
-      "acc": 0.27989064887030635,
-      "num_samples": 12437,
-      "acc_stderr": 0.004025808042023552,
-      "acc_norm": 0.29114738280935915,
-      "acc_norm_stderr": 0.004073747079727503
-    }
-  },
-  "versions": {
-    "mmlu_hi": 0
-  },
-  "config": {
-    "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=sarvamai/sarvam-2b-v0.5",
-    "num_fewshot": 5,
-    "batch_size": null,
-    "device": "cuda",
-    "no_cache": true,
-    "limit": null,
-    "bootstrap_iters": 100000,
-    "description_dict": {}
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7232174c67b3aea2b2fbd05bcfaa8e36180d6906b5ccdab9cf984b247ebf7e0
+size 573
