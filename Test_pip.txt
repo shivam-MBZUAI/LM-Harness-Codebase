@@ -1,4 +1,4 @@
-absl-py==2.1.0
+bsl-py==2.1.0
 accelerate==0.30.1
 aiohappyeyeballs==2.4.0
 aiohttp==3.9.5
@@ -65,7 +65,7 @@ fonttools==4.53.1
 fqdn==1.5.1
 free_proxy==1.1.1
 frozenlist==1.4.1
-fsspec @ file:///croot/fsspec_1714461537038/work
+fsspec==2024.3.1
 future==1.0.0
 git-filter-repo==2.45.0
 gmpy2==2.1.5
@@ -115,14 +115,14 @@ langchain-text-splitters==0.2.2
 langsmith==0.1.85
 linear-tsv==1.1.0
 lxml==5.2.2
-MarkupSafe @ file:///croot/markupsafe_1704205993651/work
+markupsafe==2.1.3
 marshmallow==3.21.2
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
 mbstrdecoder==1.1.3
 mistune==3.0.2
-mkl-fft @ file:///croot/mkl_fft_1695058164594/work
-mkl-random @ file:///croot/mkl_random_1695059800811/work
+mkl-fft==1.3.8
+mkl-random==1.2.4
 mkl-service==2.4.0
 mpmath @ file:///croot/mpmath_1690848262763/work
 muddler==0.1.3
