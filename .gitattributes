@@ -1,0 +1,2 @@
+HuggingFaceDatasets/MetaLlama3.1/Meta-Llama-3.1-8B-Instruct-evals__multilingual_mmlu_hi__details.json filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
