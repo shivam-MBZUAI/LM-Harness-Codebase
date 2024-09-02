@@ -1,6 +1,5 @@
-bsl-py==2.1.0
+absl-py==2.1.0
 accelerate==0.30.1
-aiohappyeyeballs==2.4.0
 aiohttp==3.9.5
 aiosignal==1.3.1
 alabaster==0.7.16
@@ -10,7 +9,6 @@ anyio==4.4.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
-asttokens==2.4.1
 async-lru==2.0.4
 async-timeout==4.0.3
 attrs==23.2.0
@@ -20,18 +18,16 @@ bert-score==0.3.13
 bibtexparser==1.4.1
 bitsandbytes==0.43.1
 bleach==6.1.0
-boto3==1.35.10
-botocore==1.35.10
+boto3==1.34.104
+botocore==1.34.104
 cached-property==1.5.2
 cachetools==5.3.3
 camel-kenlm==2024.5.6
 camel-tools==1.5.2
 cchardet==2.1.7
 certifi==2024.7.4
-cffi==1.17.0
 chardet==5.2.0
 charset-normalizer==3.3.2
-click==8.1.7
 colorama==0.4.6
 comm==0.2.2
 configparser==3.8.1
@@ -45,8 +41,6 @@ datapackage==1.15.4
 DataProperty==1.0.1
 datasets==2.19.1
 debugpy==1.8.1
-decorator==5.1.1
-defusedxml==0.7.1
 Deprecated==1.2.14
 dill==0.3.8
 distro==1.9.0
@@ -57,7 +51,6 @@ emoji==2.11.1
 et-xmlfile==1.1.0
 evaluate==0.4.2
 exceptiongroup==1.2.1
-executing==2.1.0
 fake-useragent==1.5.1
 fastjsonschema==2.19.1
 filelock==3.14.0
@@ -77,15 +70,12 @@ huggingface-hub==0.24.2
 idna==3.7
 ijson==3.2.3
 imagesize==1.4.1
-importlib_metadata==8.4.0
 importlib_resources==6.4.0
 ipykernel==6.29.4
-ipython==8.18.1
 ipywidgets==8.1.2
 isodate==0.6.1
 isoduration==20.11.0
-jedi==0.19.1
-Jinja2 @ file:///croot/jinja2_1716993405101/work
+Jinja2==3.1.4
 jmespath==1.0.1
 joblib==1.4.2
 json5==0.9.25
@@ -124,7 +114,7 @@ mistune==3.0.2
 mkl-fft==1.3.8
 mkl-random==1.2.4
 mkl-service==2.4.0
-mpmath @ file:///croot/mpmath_1690848262763/work
+mpmath==1.3.0
 muddler==0.1.3
 multidict==6.0.5
 multiprocess==0.70.16
@@ -133,12 +123,12 @@ nbclient==0.10.0
 nbconvert==7.16.4
 nbformat==5.10.4
 nest-asyncio==1.6.0
-networkx @ file:///croot/networkx_1717597493534/work
+networkx==3.2.1
 nltk==3.8.1
 notebook==7.1.3
 notebook_shim==0.2.4
 numexpr==2.10.0
-numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp39-cp39-linux_x86_64.whl#sha256=6094eeedd869502faa0fd0a8c5ad3a70c5779be06ddd1feb7627e5c212fac420
+numpy==1.26.4
 nvidia-cublas-cu12==12.1.3.1
 nvidia-cuda-cupti-cu12==12.1.105
 nvidia-cuda-nvrtc-cu12==12.1.105
@@ -163,28 +153,22 @@ pandocfilters==1.5.1
 parso==0.8.4
 pathvalidate==3.2.0
 peft==0.10.0
-pexpect==4.9.0
 pillow==10.4.0
 pip-chill==1.0.3
 platformdirs==4.2.1
 portalocker==2.8.2
 prometheus_client==0.20.0
-prompt_toolkit==3.0.47
 protobuf==5.26.1
 psutil==6.0.0
-ptyprocess==0.7.0
-pure_eval==0.2.3
 pyarrow==16.0.0
 pyarrow-hotfix==0.6
 pybind11==2.12.0
 pycountry==23.12.11
-pycparser==2.22
 pydantic==2.7.1
 pydantic_core==2.18.2
 Pygments==2.18.0
 pyparsing==3.1.2
 pyrsistent==0.20.0
-PySocks==1.7.1
 pytablewriter==1.2.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
@@ -198,11 +182,9 @@ referencing==0.35.1
 regex==2024.5.10
 requests==2.32.3
 rfc3339-validator==0.1.4
-rfc3986==2.0.0
 rfc3986-validator==0.1.1
 rouge_score==0.1.2
 rpds-py==0.18.1
-s3transfer==0.10.2
 sacrebleu==2.4.2
 safetensors==0.4.3
 scholarly==1.7.11
@@ -228,8 +210,7 @@ sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
 SQLAlchemy==2.0.30
 sqlitedict==2.1.0
-stack-data==0.6.3
-sympy @ file:///croot/sympy_1701397643339/work
+sympy==1.12
 tabledata==1.3.3
 tableschema==1.20.11
 tabulate==0.9.0
@@ -240,8 +221,7 @@ terminado==0.18.1
 threadpoolctl==3.5.0
 tinycss2==1.3.0
 tokenizers==0.19.1
-tomli==2.0.1
-torch @ file:///croot/pytorch-select_1717607455294/work
+torch==2.3.0
 tornado==6.4
 tqdm==4.66.4
 tqdm-multiprocess==0.0.11
@@ -253,12 +233,11 @@ triton==2.3.0
 typepy==1.3.2
 types-python-dateutil==2.9.0.20240316
 typing-inspect==0.9.0
-typing_extensions @ file:///croot/typing_extensions_1715268824938/work
+typing_extensions==4.11.0
 tzdata==2024.1
 unicodecsv==0.14.1
 uri-template==1.3.0
-urllib3==1.26.20
-wcwidth==0.2.13
+urllib3==2.2.2
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.8.0
