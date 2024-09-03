@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:025da3ccbac7927eb514b973f8382fa4f9ced815fc38f1c07fa95855caba5ba2
-size 572
+{
+  "results": {
+    "mmlu_hi": {
+      "acc": 0.3734019458068666,
+      "num_samples": 12437,
+      "acc_stderr": 0.004337529611332046,
+      "acc_norm": 0.37492964541288093,
+      "acc_norm_stderr": 0.004341091950003458
+    }
+  },
+  "versions": {
+    "mmlu_hi": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "num_fewshot": 5,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
