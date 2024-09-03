@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mmlu_hm": {
+      "acc": 0.33777239709443097,
+      "num_samples": 14042,
+      "acc_stderr": 0.003991321374081377,
+      "acc_norm": 0.3255234297108674,
+      "acc_norm_stderr": 0.003954353955693097
+    }
+  },
+  "versions": {
+    "mmlu_hm": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
