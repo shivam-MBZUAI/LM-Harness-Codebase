@@ -1,0 +1,25 @@
+{
+  "results": {
+    "hellaswag_ho": {
+      "acc": 0.3013343955387373,
+      "num_samples": 10042,
+      "acc_stderr": 0.004578999029127984,
+      "acc_norm": 0.33041226847241584,
+      "acc_norm_stderr": 0.0046940027819395705
+    }
+  },
+  "versions": {
+    "hellaswag_ho": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=ai4bharat/Airavata",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

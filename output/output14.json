@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mmlu_hn": {
+      "acc": 0.25907990314769974,
+      "num_samples": 14042,
+      "acc_stderr": 0.0036974603946923045,
+      "acc_norm": 0.28137017518871954,
+      "acc_norm_stderr": 0.003794832659134365
+    }
+  },
+  "versions": {
+    "mmlu_hn": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=ai4bharat/Airavata",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

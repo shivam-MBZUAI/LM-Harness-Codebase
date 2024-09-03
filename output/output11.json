@@ -1,0 +1,25 @@
+{
+  "results": {
+    "arc_challenge": {
+      "acc": 0.3890784982935154,
+      "num_samples": 1172,
+      "acc_stderr": 0.014247309976045605,
+      "acc_norm": 0.40102389078498296,
+      "acc_norm_stderr": 0.014322255790719869
+    }
+  },
+  "versions": {
+    "arc_challenge": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=ai4bharat/Airavata",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

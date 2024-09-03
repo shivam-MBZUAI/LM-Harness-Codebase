@@ -1,0 +1,25 @@
+{
+  "results": {
+    "truthfulqa_mc": {
+      "mc1": 0.3684210526315789,
+      "num_samples": 817,
+      "mc1_stderr": 0.016886551261046042,
+      "mc2": 0.5262185160113455,
+      "mc2_stderr": 0.015554198754180107
+    }
+  },
+  "versions": {
+    "truthfulqa_mc": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
