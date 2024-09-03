@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mmlu_hn": {
+      "acc": 0.2469733656174334,
+      "num_samples": 14042,
+      "acc_stderr": 0.0036394118855664127,
+      "acc_norm": 0.2798034468024498,
+      "acc_norm_stderr": 0.0037883755903115675
+    }
+  },
+  "versions": {
+    "mmlu_hn": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=Barkavi/llama2-7B",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
