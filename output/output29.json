@@ -1,11 +1,11 @@
 {
   "results": {
     "arc_hq": {
-      "acc": 0.3003412969283277,
+      "acc": 0.2790102389078498,
       "num_samples": 1172,
-      "acc_stderr": 0.013395909309956997,
-      "acc_norm": 0.33447098976109213,
-      "acc_norm_stderr": 0.013787460322441382
+      "acc_stderr": 0.013106784883601329,
+      "acc_norm": 0.3267918088737201,
+      "acc_norm_stderr": 0.013706665975587324
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaOrca-Merged",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",
