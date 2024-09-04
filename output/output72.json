@@ -1,0 +1,25 @@
+{
+  "results": {
+    "hellaswag": {
+      "acc": 0.5599482174865564,
+      "num_samples": 10042,
+      "acc_stderr": 0.004953787146510933,
+      "acc_norm": 0.7396932881896037,
+      "acc_norm_stderr": 0.004379051357024144
+    }
+  },
+  "versions": {
+    "hellaswag": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

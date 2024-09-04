@@ -1,0 +1,25 @@
+{
+  "results": {
+    "arc_challenge": {
+      "acc": 0.41638225255972694,
+      "num_samples": 1172,
+      "acc_stderr": 0.014405618279436178,
+      "acc_norm": 0.4522184300341297,
+      "acc_norm_stderr": 0.014544519880633832
+    }
+  },
+  "versions": {
+    "arc_challenge": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mmlu_hn": {
+      "acc": 0.26926363765845324,
+      "num_samples": 14042,
+      "acc_stderr": 0.003743434116984963,
+      "acc_norm": 0.28307933342828656,
+      "acc_norm_stderr": 0.003801811783570962
+    }
+  },
+  "versions": {
+    "mmlu_hn": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=sundar-pichai/llama-2-13b",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
