@@ -1,11 +1,11 @@
 {
   "results": {
     "hellaswag_ho": {
-      "acc": 0.29047998406691894,
+      "acc": 0.2862975502887871,
       "num_samples": 10042,
-      "acc_stderr": 0.004530560646902538,
-      "acc_norm": 0.30611431985660226,
-      "acc_norm_stderr": 0.004599358920909537
+      "acc_stderr": 0.004511063351278699,
+      "acc_norm": 0.33041226847241584,
+      "acc_norm_stderr": 0.004694002781939564
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=sundar-pichai/llama-2-13b",
+    "model_args": "use_accelerate=True,pretrained=BhabhaAI/Gajendra-v0.1",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

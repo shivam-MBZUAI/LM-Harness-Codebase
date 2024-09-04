@@ -1,11 +1,11 @@
 {
   "results": {
     "arc_hq": {
-      "acc": 0.21928327645051193,
+      "acc": 0.2226962457337884,
       "num_samples": 1172,
-      "acc_stderr": 0.012091245787615714,
-      "acc_norm": 0.26621160409556316,
-      "acc_norm_stderr": 0.01291577478152322
+      "acc_stderr": 0.012158314774829936,
+      "acc_norm": 0.2636518771331058,
+      "acc_norm_stderr": 0.012875929151297058
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=sundar-pichai/llama-2-13b",
+    "model_args": "use_accelerate=True,pretrained=BhabhaAI/Gajendra-v0.1",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",
