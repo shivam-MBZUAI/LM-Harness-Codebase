@@ -1,11 +1,11 @@
 {
   "results": {
     "truthfulqa_mc": {
-      "mc1": 0.3684210526315789,
+      "mc1": 0.37576499388004897,
       "num_samples": 817,
-      "mc1_stderr": 0.016886551261046042,
-      "mc2": 0.5262185160113455,
-      "mc2_stderr": 0.015554198754180107
+      "mc1_stderr": 0.016954584060214297,
+      "mc2": 0.5387429459010198,
+      "mc2_stderr": 0.015592212012269839
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaOrca-Merged",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

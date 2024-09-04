@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mmlu_hm": {
+      "acc": 0.2951146560319043,
+      "num_samples": 14042,
+      "acc_stderr": 0.003849068230948615,
+      "acc_norm": 0.29910269192422734,
+      "acc_norm_stderr": 0.003864010849532569
+    }
+  },
+  "versions": {
+    "mmlu_hm": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "device": "cuda",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
