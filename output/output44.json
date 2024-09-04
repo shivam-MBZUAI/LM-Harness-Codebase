@@ -1,11 +1,11 @@
 {
   "results": {
     "truthfulqa_mc": {
-      "mc1": 0.28518971848225216,
+      "mc1": 0.2533659730722154,
       "num_samples": 817,
-      "mc1_stderr": 0.015805827874454892,
-      "mc2": 0.44060596369890814,
-      "mc2_stderr": 0.015413720115465303
+      "mc1_stderr": 0.015225899340826854,
+      "mc2": 0.4067781533381472,
+      "mc2_stderr": 0.01539226004139238
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=sundar-pichai/llama-2-13b",
+    "model_args": "use_accelerate=True,pretrained=BhabhaAI/Gajendra-v0.1",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

@@ -1,11 +1,11 @@
 {
   "results": {
     "arc_hp": {
-      "acc": 0.47769360269360267,
+      "acc": 0.494949494949495,
       "num_samples": 2376,
-      "acc_stderr": 0.010249568404555641,
-      "acc_norm": 0.46464646464646464,
-      "acc_norm_stderr": 0.010234104543411433
+      "acc_stderr": 0.010259260102565858,
+      "acc_norm": 0.48274410774410775,
+      "acc_norm_stderr": 0.010253671674754631
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaOrca-Merged",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

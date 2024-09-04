@@ -1,11 +1,11 @@
 {
   "results": {
     "mmlu_hn": {
-      "acc": 0.3461045435123202,
+      "acc": 0.3160518444666002,
       "num_samples": 14042,
-      "acc_stderr": 0.004014752622596072,
-      "acc_norm": 0.3327873522290272,
-      "acc_norm_stderr": 0.003976642242976666
+      "acc_stderr": 0.003923663335483825,
+      "acc_norm": 0.3104970801880074,
+      "acc_norm_stderr": 0.0039047910157608266
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaUltra-Merged",
+    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaOrca-Merged",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

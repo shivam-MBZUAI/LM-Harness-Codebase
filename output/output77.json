@@ -1,11 +1,11 @@
 {
   "results": {
     "hellaswag_ho": {
-      "acc": 0.360884285998805,
+      "acc": 0.3904600677155945,
       "num_samples": 10042,
-      "acc_stderr": 0.004792755235823529,
-      "acc_norm": 0.42561242780322645,
-      "acc_norm_stderr": 0.0049342503908797785
+      "acc_stderr": 0.004868564301540819,
+      "acc_norm": 0.4836685919139614,
+      "acc_norm_stderr": 0.0049871190031514955
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=GenVRadmin/AryaBhatta-GemmaOrca-Merged",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

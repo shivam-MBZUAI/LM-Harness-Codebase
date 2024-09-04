@@ -1,19 +1,19 @@
 {
   "results": {
-    "arc_challenge": {
-      "acc": 0.40017064846416384,
+    "arc_hq": {
+      "acc": 0.29180887372013653,
       "num_samples": 1172,
-      "acc_stderr": 0.014317197787809181,
-      "acc_norm": 0.4300341296928328,
-      "acc_norm_stderr": 0.014467631559137996
+      "acc_stderr": 0.013284525292403513,
+      "acc_norm": 0.3387372013651877,
+      "acc_norm_stderr": 0.01383056892797433
     }
   },
   "versions": {
-    "arc_challenge": 0
+    "arc_hq": 0
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=BhabhaAI/Gajendra-v0.1",
+    "model_args": "use_accelerate=True,pretrained=CohereForAI/aya-23-8B",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",

@@ -1,11 +1,11 @@
 {
   "results": {
     "mmlu_hn": {
-      "acc": 0.26926363765845324,
+      "acc": 0.25409485828229594,
       "num_samples": 14042,
-      "acc_stderr": 0.003743434116984963,
-      "acc_norm": 0.28307933342828656,
-      "acc_norm_stderr": 0.003801811783570962
+      "acc_stderr": 0.0036740132588442467,
+      "acc_norm": 0.27403503774391114,
+      "acc_norm_stderr": 0.0037641061122962814
     }
   },
   "versions": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "model": "hf-causal-experimental",
-    "model_args": "use_accelerate=True,pretrained=sundar-pichai/llama-2-13b",
+    "model_args": "use_accelerate=True,pretrained=BhabhaAI/Gajendra-v0.1",
     "num_fewshot": 0,
     "batch_size": null,
     "device": "cuda",
