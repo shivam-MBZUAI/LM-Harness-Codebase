@@ -4,7 +4,7 @@ from datasets import load_dataset
 import argparse
 from evaluate import load as load_evaluate  # type: ignore
 from statistics import mean
-from torch.cuda.amp import autocast  # type: ignore
+from torch.amp import autocast  # type: ignore
 
 # Step 1: Set up argument parsing
 parser = argparse.ArgumentParser(description="Run evaluation on the LLaMA3 model.")
@@ -54,7 +54,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         
         # Enhanced prompt with detailed guidance on tone, structure, and content
         prompt = f"""
-        You are an expert medical professional. Your task is to summarize complex medical queries in a concise, factual, and clear manner. Use no more than 100 words. The summary should prioritize critical medical information and omit irrelevant details. Ensure the tone is professional and empathetic, focusing on the patient’s symptoms, concerns, and any ongoing treatment.
+        You are an expert medical professional. Your task is to summarize complex medical queries in a concise, factual, and clear manner. Use no more than 50 words. The summary should prioritize critical medical information and omit irrelevant details. Ensure the tone is professional and empathetic, focusing on the patient’s symptoms, concerns, and any ongoing treatment.
 
         {source_text}
         """
@@ -68,14 +68,14 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         torch.cuda.empty_cache()
 
         # Generate summary with mixed precision and adjusted generation settings
-        with autocast():
+        with autocast("cuda"):
             # Access the underlying model in case of DataParallel
             if isinstance(model, torch.nn.DataParallel):
                 outputs = model.module.generate(
                     input_ids=input_ids,
                     do_sample=True,  # Enable sampling for temperature and top_k/top_p
                     num_beams=5,  # Increase number of beams
-                    max_new_tokens=150,  # Generate more tokens for longer summaries
+                    max_new_tokens=200,  # Increase further for complete summaries
                     no_repeat_ngram_size=3,  # Less restrictive repetition constraint
                     top_k=50,  # More random sampling
                     top_p=0.95,  # Increase top_p to allow for more token diversity
@@ -87,7 +87,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
                     input_ids=input_ids,
                     do_sample=True,  # Enable sampling for temperature and top_k/top_p
                     num_beams=5,  # Increase number of beams
-                    max_new_tokens=150,  # Generate more tokens for longer summaries
+                    max_new_tokens=200,  # Increase further for complete summaries
                     no_repeat_ngram_size=3,  # Less restrictive repetition constraint
                     top_k=50,  # More random sampling
                     top_p=0.95,  # Increase top_p to allow for more token diversity
@@ -98,7 +98,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         generated_tokens = outputs[0][input_ids.shape[-1]:]
         prediction = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
 
-        # Post-processing: remove common unwanted phrases like "### Input:" and "### Response:"
+        # Post-processing: remove common unwanted phrases like "Input:" and "Response:"
         prediction = prediction.replace("### Input:", "").replace("### Response:", "").strip()
 
         # Print initial text (source) and generated text
