@@ -54,7 +54,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         
         # Enhanced prompt with detailed guidance on tone, structure, and content
         prompt = f"""
-        You are an expert medical professional. Your task is to summarize complex medical queries in a concise, factual, and clear manner. Use no more than 50 words. The summary should prioritize critical medical information and omit irrelevant details. Ensure the tone is professional and empathetic, focusing on the patient’s symptoms, concerns, and any ongoing treatment.
+        You are an expert medical professional. Summarize the following complex medical queries in a concise, factual, and clear manner. Focus on the key symptoms, diagnosis, and immediate medical concerns. Use no more than 50 words.
 
         {source_text}
         """
@@ -74,24 +74,24 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
                 outputs = model.module.generate(
                     input_ids=input_ids,
                     do_sample=True,  # Enable sampling for temperature and top_k/top_p
-                    num_beams=5,  # Increase number of beams
+                    num_beams=7,  # Increase beams for higher quality
                     max_new_tokens=200,  # Increase further for complete summaries
                     no_repeat_ngram_size=3,  # Less restrictive repetition constraint
-                    top_k=50,  # More random sampling
-                    top_p=0.95,  # Increase top_p to allow for more token diversity
-                    temperature=1.0,  # Remove temperature control
+                    top_k=40,  # Adjust for better sampling
+                    top_p=0.9,  # Adjust for better sampling
+                    temperature=0.8,  # Slight temperature control
                     eos_token_id=tokenizer.eos_token_id  # Stop generation at EOS token
                 )
             else:
                 outputs = model.generate(
                     input_ids=input_ids,
                     do_sample=True,  # Enable sampling for temperature and top_k/top_p
-                    num_beams=5,  # Increase number of beams
+                    num_beams=7,  # Increase beams for higher quality
                     max_new_tokens=200,  # Increase further for complete summaries
                     no_repeat_ngram_size=3,  # Less restrictive repetition constraint
-                    top_k=50,  # More random sampling
-                    top_p=0.95,  # Increase top_p to allow for more token diversity
-                    temperature=1.0,  # Remove temperature control
+                    top_k=40,  # Adjust for better sampling
+                    top_p=0.9,  # Adjust for better sampling
+                    temperature=0.8,  # Slight temperature control
                     eos_token_id=tokenizer.eos_token_id  # Stop generation at EOS token
                 )
 
