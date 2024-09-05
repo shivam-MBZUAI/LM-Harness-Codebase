@@ -1,9 +1,8 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, logging
+import torch  # type: ignore
+from transformers import AutoTokenizer, AutoModelForCausalLM, logging  # type: ignore
 from datasets import load_dataset
 import argparse
-from evaluate import load as load_evaluate
-from torch.cuda.amp import autocast
+from evaluate import load as load_evaluate  # type: ignore
 from statistics import mean
 
 # Step 1: Set up argument parsing

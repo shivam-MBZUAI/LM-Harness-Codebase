@@ -1,8 +1,8 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, logging
+import torch  # type: ignore
+from transformers import AutoTokenizer, AutoModelForCausalLM, logging # type: ignore
 from datasets import load_dataset
 import argparse
-from evaluate import load as load_evaluate
+from evaluate import load as load_evaluate  # type: ignore
 
 # Step 1: Set up argument parsing
 parser = argparse.ArgumentParser(description="Run evaluation on the LLaMA3 model.")
@@ -46,7 +46,7 @@ def evaluate(model, tokenizer, dataset, metric):
         reference_text = example["target"]  # Reference translation (Hindi)
         prompt = f"Translate the following English text to Hindi:\n{source_text}"
 
-        # Tokenize the source text directly without any additional prompt
+        # Tokenize the source text with the prompt
         inputs = tokenizer(prompt, return_tensors="pt", truncation=True, padding=True, max_length=1024).to(device)
 
         # Extract the input_ids tensor
@@ -70,23 +70,27 @@ def evaluate(model, tokenizer, dataset, metric):
                 max_new_tokens=256
             )
 
-        # Decode only the generated output, not including the input
+        # Decode the generated output
         prediction = tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
 
+        # Remove the prompt part from the prediction
+        translated_text = prediction.replace(f"Translate the following English text to Hindi:\n{source_text}", "").strip()
+
         # Store the prediction and reference
-        all_predictions.append(prediction)
+        all_predictions.append(translated_text)
         all_references.append([reference_text])
 
-        if id < 1:
+        if id < 3:
             print(f"Processed Example {id}")
             print("Generated Translation:")
-            print(prediction)
+            print(translated_text)
             print("\nOriginal Reference:")
             print(reference_text)
-    
+
     # Compute BLEU score
     results = metric.compute(predictions=all_predictions, references=all_references)
     return results
+
 
 # Step 5: Evaluate the model
 results = evaluate(model, tokenizer, dataset, bleu)
