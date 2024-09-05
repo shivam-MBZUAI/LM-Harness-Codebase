@@ -3,7 +3,7 @@ from datasets import load_dataset
 from sacrebleu.metrics import CHRF   # type: ignore
 import argparse
 import torch   # type: ignore
-from torch.cuda.amp import autocast  # type: ignore
+from torch.amp import autocast  # # type: ignore
 from torch.nn import DataParallel   # type: ignore
 
 # Step 1: Set up argument parsing
@@ -47,12 +47,15 @@ for id, example in enumerate(dataset):
     input_text = example['text']  # Adjust field name if necessary
     target_text = example['summary']  # Adjust field name if necessary
     
-    # Tokenize input with truncation and padding (no .to('cuda'))
+    # Tokenize input with truncation and padding (keep on CPU for now)
     inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512, padding=True)
+    
+    # Move inputs to the same device as the model (GPU)
+    inputs = {key: value.to('cuda') for key, value in inputs.items()}
     
     # Generate output with no_grad and mixed precision for memory optimization
     with torch.no_grad():
-        with autocast():
+        with autocast(device_type='cuda'):  # Updated to use 'cuda' device type
             outputs = model.module.generate(**inputs, max_new_tokens=50)  # Reduced max_new_tokens
     
     # Decode output
