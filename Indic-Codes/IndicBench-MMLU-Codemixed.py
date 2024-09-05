@@ -1,8 +1,8 @@
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, logging
+import torch # type: ignore
+from transformers import AutoModelForCausalLM, AutoTokenizer, logging # type: ignore
 from datasets import load_dataset
 import argparse
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score # type: ignore
 
 # Transformers logging to suppress messages
 logging.set_verbosity_error()
