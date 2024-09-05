@@ -1,10 +1,10 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, logging
+from transformers import AutoTokenizer, AutoModelForCausalLM, logging   # type: ignore
 from datasets import load_dataset
-from sacrebleu.metrics import CHRF
+from sacrebleu.metrics import CHRF   # type: ignore
 import argparse
-import torch
-from torch.cuda.amp import autocast
-from torch.nn import DataParallel
+import torch   # type: ignore
+from torch.cuda.amp import autocast  # type: ignore
+from torch.nn import DataParallel   # type: ignore
 
 # Step 1: Set up argument parsing
 parser = argparse.ArgumentParser(description="Run evaluation on the LLaMA3 model.")
@@ -38,14 +38,17 @@ chrf = CHRF()
 total_chrf_score = 0
 num_samples = len(dataset)
 
+# Track how many samples we have printed for cross-summarization
+printed_summaries = 0
+
 # Step 5: Evaluate the model on the dataset
 for id, example in enumerate(dataset):
     
     input_text = example['text']  # Adjust field name if necessary
     target_text = example['summary']  # Adjust field name if necessary
     
-    # Tokenize input with truncation and padding
-    inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512, padding=True).to('cuda')
+    # Tokenize input with truncation and padding (no .to('cuda'))
+    inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512, padding=True)
     
     # Generate output with no_grad and mixed precision for memory optimization
     with torch.no_grad():
@@ -55,6 +58,13 @@ for id, example in enumerate(dataset):
     # Decode output
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
+    # Print the first two cross-summarizations
+    if printed_summaries < 2:
+        print(f"Original Text {id + 1}: {input_text}")
+        print(f"Generated Summary {id + 1}: {generated_text}")
+        print(f"Target Summary {id + 1}: {target_text}\n")
+        printed_summaries += 1
+
     # Compute CHRF score
     chrf_score = chrf.sentence_score(generated_text, [target_text]).score
     
