@@ -46,7 +46,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         
         # Enhanced prompt with detailed guidance on tone, structure, and content
         prompt = f"""
-        You are an expert medical professional. Your task is to summarize complex medical queries in a concise, factual, and clear manner. Use no more than 100 words. The summary should prioritize critical medical information and omit irrelevant details. Ensure the tone is professional and empathetic, focusing on the patient’s symptoms, concerns, and any ongoing treatment. The summary should be coherent and easy for both medical professionals and concerned family members to understand. If applicable, reference potential diagnoses or treatments in a general way without specific medical recommendations.
+        You are an expert medical professional. Your task is to summarize complex medical queries in a concise, factual, and clear manner. Use no more than 150 words. The summary should prioritize critical medical information and omit irrelevant details. Ensure the tone is professional and empathetic, focusing on the patient’s symptoms, concerns, and any ongoing treatment. The summary should be coherent and easy for both medical professionals and concerned family members to understand. If applicable, reference potential diagnoses or treatments in a general way without specific medical recommendations.
 
         Example 1:
         Source: "Namaste doctor, mere 4 saal ke bhatije ko autisim hai aur char din pehle uske right eye suj gaya tha, jiske baad infection ho gaya aur uske eye ke aas-pass sore jaise dikhne lage. Ab ye infection left eye mein bhi fail raha hai. Bachon ke hospital ke doctors ko is bare mein kuch bhi pata nahi hai, lekin herpes ko bilkul bhi nahi dismiss kiya gaya hai. Uska image neeche attach kiya gaya hai. Tabiyat ki test results discharge par ya toh inconclusive the ya phir tayyar nahi the, waise bhi 48 ghante se zyada ho gaye hain. Ek doctor keh raha tha ki ye sthiti andha-bhakti bhi kar sakti hai. Wo teen alag-alag prakar ke IV antibiotics par hain, lekin ab toh lagta hai ki uski sthiti uske face ke dusre hisse mein bhi fail rahi hai. Uske autisim ki wajah se hum ye nahi samajh sakte ki usko dard ya takleef hai ya nahi. Humein usko suffer karte dekhna dil ko tod deta hai. Agar aap hume koi jankari de sakein toh hum aapki ati abhari honge."
@@ -74,7 +74,7 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         outputs = model.generate(
             input_ids=input_ids,
             num_beams=5,
-            max_new_tokens=100,  # Limit the length for concise summaries
+            max_new_tokens=150,  # Limit the length for concise summaries
             no_repeat_ngram_size=5,  # Prevents repetition of 5-grams
             top_k=20,  # Reduce randomness
             top_p=0.80,  # Reduce randomness
