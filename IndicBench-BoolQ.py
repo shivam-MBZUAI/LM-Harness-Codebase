@@ -23,7 +23,7 @@ if tokenizer.pad_token is None:
 print("Model Loaded")
 
 # Step 2: Load only 10 examples from the BoolQA dataset (validation split)
-dataset = load_dataset("Cognitive-Lab/Indic-BoolQ", name="hi", split="validation[:50]")
+dataset = load_dataset("Cognitive-Lab/Indic-BoolQ", name="hi", split="validation")
 print("Dataset Loaded")
 
 # Step 3: Initialize variables for F1 score computation
