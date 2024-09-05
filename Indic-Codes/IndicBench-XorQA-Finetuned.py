@@ -2,14 +2,19 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, logging
 from datasets import load_dataset
 from sklearn.metrics import f1_score
 import torch
+import argparse
 
 # Transformers logging to suppress message
 logging.set_verbosity_error()
 
-# Step 1: Load the custom LLaMA3 model and tokenizer with mixed precision
-model_name = "../Models/llama3Pro/llama3pro_10B_hi_cosmo_base/checkpoint_27466_to_hf/"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16)  # Use FP16
+# Step 1: Set up argument parsing
+parser = argparse.ArgumentParser(description="Run evaluation on the LLaMA3 model.")
+parser.add_argument("--model_name", type=str, required=True, help="Path to the model directory.")
+args = parser.parse_args()
+
+# Step 2: Load the custom LLaMA3 model and tokenizer with mixed precision
+tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+model = AutoModelForCausalLM.from_pretrained(args.model_name, torch_dtype=torch.float16)
 
 # Set padding token if not already set
 if tokenizer.pad_token is None:
@@ -18,7 +23,7 @@ if tokenizer.pad_token is None:
 print("Model Loaded")
 
 # Move the model to cuda:0 explicitly
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 # Step 2: Load the Indic-Bench dataset
@@ -54,8 +59,8 @@ def evaluate_dataset(model, dataset):
             outputs = model.generate(
                 inputs, 
                 attention_mask=attention_mask, 
-                max_new_tokens=100,  # Reduce max_new_tokens from 100 to 50
-                num_beams=5,  # Reduce number of beams from 5 to 3
+                max_new_tokens=100,
+                num_beams=5,
                 early_stopping=True
             )
         
