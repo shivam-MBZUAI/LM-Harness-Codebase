@@ -59,14 +59,18 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
             num_beams=5,
             max_new_tokens=150,  # Limit the length for concise summaries
             no_repeat_ngram_size=5,  # Prevents repetition of 5-grams
-            top_k=40,  # Reduce randomness
-            top_p=0.90,  # Reduce randomness
-            temperature=0.8,  # Control randomness
+            top_k=20,  # Reduce randomness
+            top_p=0.80,  # Reduce randomness
+            temperature=0.6,  # Control randomness
             eos_token_id=tokenizer.eos_token_id  # Stop generation at EOS token
         )
 
         generated_tokens = outputs[0][input_ids.shape[-1]:]
         prediction = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
+
+        # Post-processing: remove common unwanted endings
+        if "Here is an extract" in prediction:
+            prediction = prediction.split("Here is an extract")[0].strip()
 
         
         # Print initial text (source) and generated text
