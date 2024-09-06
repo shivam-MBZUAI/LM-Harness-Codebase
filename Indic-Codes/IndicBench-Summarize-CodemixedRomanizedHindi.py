@@ -36,7 +36,7 @@ if tokenizer.pad_token is None:
 print("Model Loaded")
 
 # Step 3: Load the dataset
-dataset = load_dataset("ArkaAcharya/MMCQSD", split="train[:3]")
+dataset = load_dataset("ArkaAcharya/MMCQSD", split="train")
 print("Dataset Loaded")
 
 # Load evaluation metrics: ROUGE and BERTScore
@@ -51,12 +51,13 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
     for id, example in enumerate(dataset):
         source_text = example["Codemixed_Question"]
         reference_text = example["summary"]
-        
-        # Enhanced prompt with detailed guidance on tone, structure, and content
-        prompt = f"""
-        You are an expert medical professional. Summarize the following complex medical queries in a concise, factual, and clear manner. Focus on the key symptoms, diagnosis, and immediate medical concerns. Use no more than 50 words.
 
-        {source_text}
+        # Simplified and clear prompt
+        prompt = f"""
+        Translate and summarize the following medical query into clear, concise English. The output should focus on key symptoms, diagnosis, and treatment. The summary must be in **English** only.
+
+        Query: {source_text}
+        Summary:
         """
 
         # Tokenize the source text directly with the enhanced prompt
@@ -67,44 +68,36 @@ def evaluate(model, tokenizer, dataset, rouge_metric, bertscore_metric):
         # Clear GPU cache before generating to free up memory
         torch.cuda.empty_cache()
 
-        # Generate summary with mixed precision and adjusted generation settings
+        # Generate summary with deterministic settings for better focus on English
         with autocast("cuda"):
             # Access the underlying model in case of DataParallel
             if isinstance(model, torch.nn.DataParallel):
                 outputs = model.module.generate(
                     input_ids=input_ids,
-                    do_sample=True,  # Enable sampling for temperature and top_k/top_p
-                    num_beams=7,  # Increase beams for higher quality
-                    max_new_tokens=200,  # Increase further for complete summaries
-                    no_repeat_ngram_size=3,  # Less restrictive repetition constraint
-                    top_k=40,  # Adjust for better sampling
-                    top_p=0.9,  # Adjust for better sampling
-                    temperature=0.8,  # Slight temperature control
+                    do_sample=False,  # Disable sampling for deterministic output
+                    num_beams=10,  # Increase beams for higher quality
+                    max_new_tokens=100,  # Increase further for complete summaries
+                    no_repeat_ngram_size=4,  # Avoid repeating n-grams for better clarity
                     eos_token_id=tokenizer.eos_token_id  # Stop generation at EOS token
                 )
             else:
                 outputs = model.generate(
                     input_ids=input_ids,
-                    do_sample=True,  # Enable sampling for temperature and top_k/top_p
-                    num_beams=7,  # Increase beams for higher quality
-                    max_new_tokens=200,  # Increase further for complete summaries
-                    no_repeat_ngram_size=3,  # Less restrictive repetition constraint
-                    top_k=40,  # Adjust for better sampling
-                    top_p=0.9,  # Adjust for better sampling
-                    temperature=0.8,  # Slight temperature control
+                    do_sample=False,  # Disable sampling for deterministic output
+                    num_beams=10,  # Increase beams for higher quality
+                    max_new_tokens=100,  # Increase further for complete summaries
+                    no_repeat_ngram_size=4,  # Avoid repeating n-grams for better clarity
                     eos_token_id=tokenizer.eos_token_id  # Stop generation at EOS token
                 )
 
         generated_tokens = outputs[0][input_ids.shape[-1]:]
         prediction = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
 
-        # Post-processing: remove common unwanted phrases like "Input:" and "Response:"
-        prediction = prediction.replace("### Input:", "").replace("### Response:", "").strip()
-
-        # Print initial text (source) and generated text
-        print(f"Source Text: {source_text}\n")
-        print(f"Source Summary: {reference_text}\n")
-        print(f"Generated Summary: {prediction}\n\n")
+        if id < 3:
+            # Print initial text (source) and generated text
+            print(f"Source Text: {source_text}\n")
+            print(f"Source Summary: {reference_text}\n")
+            print(f"Generated Summary: {prediction}\n\n")
 
         # Store the prediction and reference
         all_predictions.append(prediction)
