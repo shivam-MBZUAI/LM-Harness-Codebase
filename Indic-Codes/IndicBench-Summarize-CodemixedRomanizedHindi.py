@@ -120,10 +120,10 @@ if isinstance(rouge_results['rougeL'], dict):
 else:
     rouge_l_fmeasure = rouge_results['rougeL']
 
-print(f"ROUGE Score: {rouge_l_fmeasure:.2f}")
+print(f"ROUGE Score: {rouge_l_fmeasure * 100:.2f}")
 
 # Calculate the mean of BERTScore F1 values from the list
 bertscore_f1_mean = mean(bertscore_results['f1'])
-print(f"BERTScore (F1): {bertscore_f1_mean:.2f}")
+print(f"BERTScore (F1): {bertscore_f1_mean * 100:.2f}")
 
 print("Evaluation Complete")
