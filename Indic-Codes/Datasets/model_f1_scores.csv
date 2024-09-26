@@ -1,0 +1,8 @@
+Model,F1 Score
+../../Models/llama3Pro/llama3pro_10B_hi_cosmo_base/checkpoint_27466_to_hf/,0.274476821847326
+../../Models/llama3Pro/llama3pro_10B_hi_cosmo_ift_Datav1/checkpoint_133_to_hf/,0.290362202944909
+../../Models/llama3Pro/llama3pro_10B_hi_cosmo_ift_Datav1_Safety/,0.30430606430606433
+../../Models/llama3Pro/llama3pro_10B_hi_cosmo_ift_Datav1_SafetyTemplateFix/checkpoint_161_to_hf/,0.2899974063736583
+../../Models/llama3pro_10B_hi_cosmo_ift_Datav2/checkpoint_2060_to_hf/,0.2481496746012875
+meta-llama/Meta-Llama-3-8B,0.30337384543606344
+meta-llama/Meta-Llama-3.1-8B,0.3173033187920216
